@@ -18,7 +18,54 @@ public class Guest {
 	@Column
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int guestId;
-    public String getFirstName() {
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String occupation;
+	private Date dateOfBirth;
+	private int personalNumber;
+	private int secondaryPhoneNumber;
+	private String fatherName;
+	private int fatherNumber;
+	private String localGaurdianName;
+	private int localGaurdianPhoneNumber;
+	private String bloodGroup;
+	private String gender;
+	private String addressLine1;
+	private String addressLine2;
+	private int pincode;
+	private String city;
+	private String state;
+	private String country;
+	private Long aadharNumber;
+	private Date checkinDate;
+	private String workAddressLine1;
+	private String workAddressLine2;
+	private int workNumber;
+	private String buildingName;
+	private int floorNumber;
+	private int roomNumber;
+	private int bedId;
+	private String paymentId;
+	private String transactionId;
+	private String dueAmount;
+	private String paymentPurpose;
+	private int roomRent;
+	private int securityDeposit;
+	private String paymentMethod;
+	private Date transactionDate;
+	private Date noticeDate;
+	private Date checkOutDate;
+
+	public int getGuestId() {
+		return guestId;
+	}
+
+	public void setGuestId(int guestId) {
+		this.guestId = guestId;
+	}
+
+	public String getFirstName() {
 		return firstName;
 	}
 
@@ -42,6 +89,14 @@ public class Guest {
 		this.email = email;
 	}
 
+	public String getOccupation() {
+		return occupation;
+	}
+
+	public void setOccupation(String occupation) {
+		this.occupation = occupation;
+	}
+
 	public Date getDateOfBirth() {
 		return dateOfBirth;
 	}
@@ -50,20 +105,20 @@ public class Guest {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	public int getPhone() {
-		return phone;
+	public int getPersonalNumber() {
+		return personalNumber;
 	}
 
-	public void setPhone(int phone) {
-		this.phone = phone;
+	public void setPersonalNumber(int personalNumber) {
+		this.personalNumber = personalNumber;
 	}
 
-	public int getSecondaryPhone() {
-		return secondaryPhone;
+	public int getSecondaryPhoneNumber() {
+		return secondaryPhoneNumber;
 	}
 
-	public void setSecondaryPhone(int secondaryPhone) {
-		this.secondaryPhone = secondaryPhone;
+	public void setSecondaryPhoneNumber(int secondaryPhoneNumber) {
+		this.secondaryPhoneNumber = secondaryPhoneNumber;
 	}
 
 	public String getFatherName() {
@@ -74,12 +129,12 @@ public class Guest {
 		this.fatherName = fatherName;
 	}
 
-	public int getFatherPhone() {
-		return fatherPhone;
+	public int getFatherNumber() {
+		return fatherNumber;
 	}
 
-	public void setFatherPhone(int fatherPhone) {
-		this.fatherPhone = fatherPhone;
+	public void setFatherNumber(int fatherNumber) {
+		this.fatherNumber = fatherNumber;
 	}
 
 	public String getLocalGaurdianName() {
@@ -90,12 +145,12 @@ public class Guest {
 		this.localGaurdianName = localGaurdianName;
 	}
 
-	public int getLocalGaurdianPhone() {
-		return localGaurdianPhone;
+	public int getLocalGaurdianPhoneNumber() {
+		return localGaurdianPhoneNumber;
 	}
 
-	public void setLocalGaurdianPhone(int localGaurdianPhone) {
-		this.localGaurdianPhone = localGaurdianPhone;
+	public void setLocalGaurdianPhoneNumber(int localGaurdianPhoneNumber) {
+		this.localGaurdianPhoneNumber = localGaurdianPhoneNumber;
 	}
 
 	public String getBloodGroup() {
@@ -104,6 +159,14 @@ public class Guest {
 
 	public void setBloodGroup(String bloodGroup) {
 		this.bloodGroup = bloodGroup;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
 	public String getAddressLine1() {
@@ -123,11 +186,11 @@ public class Guest {
 	}
 
 	public int getPincode() {
-		return Pincode;
+		return pincode;
 	}
 
 	public void setPincode(int pincode) {
-		Pincode = pincode;
+		this.pincode = pincode;
 	}
 
 	public String getCity() {
@@ -139,32 +202,28 @@ public class Guest {
 	}
 
 	public String getState() {
-		return State;
+		return state;
 	}
 
 	public void setState(String state) {
-		State = state;
+		this.state = state;
 	}
 
 	public String getCountry() {
-		return Country;
+		return country;
 	}
 
 	public void setCountry(String country) {
-		Country = country;
+		this.country = country;
 	}
 
-	public Long getAadharCard() {
-		return AadharCard;
+	public Long getAadharNumber() {
+		return aadharNumber;
 	}
 
-	public void setAadharCard(Long aadharCard) {
-		AadharCard = aadharCard;
+	public void setAadharNumber(Long aadharNumber) {
+		this.aadharNumber = aadharNumber;
 	}
-
-	
-
-	
 
 	public Date getCheckinDate() {
 		return checkinDate;
@@ -199,241 +258,170 @@ public class Guest {
 	}
 
 	public String getBuildingName() {
-		return BuildingName;
+		return buildingName;
 	}
 
 	public void setBuildingName(String buildingName) {
-		BuildingName = buildingName;
+		this.buildingName = buildingName;
 	}
 
 	public int getFloorNumber() {
-		return FloorNumber;
+		return floorNumber;
 	}
 
 	public void setFloorNumber(int floorNumber) {
-		FloorNumber = floorNumber;
+		this.floorNumber = floorNumber;
 	}
 
 	public int getRoomNumber() {
-		return RoomNumber;
+		return roomNumber;
 	}
 
 	public void setRoomNumber(int roomNumber) {
-		RoomNumber = roomNumber;
+		this.roomNumber = roomNumber;
 	}
 
 	public int getBedId() {
-		return BedId;
+		return bedId;
 	}
 
 	public void setBedId(int bedId) {
-		BedId = bedId;
+		this.bedId = bedId;
 	}
 
 	public String getPaymentId() {
-		return PaymentId;
+		return paymentId;
 	}
 
 	public void setPaymentId(String paymentId) {
-		PaymentId = paymentId;
+		this.paymentId = paymentId;
 	}
 
 	public String getTransactionId() {
-		return TransactionId;
+		return transactionId;
 	}
 
 	public void setTransactionId(String transactionId) {
-		TransactionId = transactionId;
+		this.transactionId = transactionId;
 	}
 
-	public String getDue() {
-		return Due;
+	public String getDueAmount() {
+		return dueAmount;
 	}
 
-	public void setDue(String due) {
-		Due = due;
+	public void setDueAmount(String dueAmount) {
+		this.dueAmount = dueAmount;
 	}
 
 	public String getPaymentPurpose() {
-		return PaymentPurpose;
+		return paymentPurpose;
 	}
 
 	public void setPaymentPurpose(String paymentPurpose) {
-		PaymentPurpose = paymentPurpose;
+		this.paymentPurpose = paymentPurpose;
 	}
 
 	public int getRoomRent() {
-		return RoomRent;
+		return roomRent;
 	}
 
 	public void setRoomRent(int roomRent) {
-		RoomRent = roomRent;
+		this.roomRent = roomRent;
 	}
 
 	public int getSecurityDeposit() {
-		return SecurityDeposit;
+		return securityDeposit;
 	}
 
 	public void setSecurityDeposit(int securityDeposit) {
-		SecurityDeposit = securityDeposit;
+		this.securityDeposit = securityDeposit;
 	}
 
 	public String getPaymentMethod() {
-		return PaymentMethod;
+		return paymentMethod;
 	}
 
 	public void setPaymentMethod(String paymentMethod) {
-		PaymentMethod = paymentMethod;
+		this.paymentMethod = paymentMethod;
 	}
 
 	public Date getTransactionDate() {
-		return TransactionDate;
+		return transactionDate;
 	}
 
 	public void setTransactionDate(Date transactionDate) {
-		TransactionDate = transactionDate;
+		this.transactionDate = transactionDate;
 	}
 
 	public Date getNoticeDate() {
-		return NoticeDate;
+		return noticeDate;
 	}
 
 	public void setNoticeDate(Date noticeDate) {
-		NoticeDate = noticeDate;
+		this.noticeDate = noticeDate;
 	}
 
 	public Date getCheckOutDate() {
-		return CheckOutDate;
+		return checkOutDate;
 	}
 
 	public void setCheckOutDate(Date checkOutDate) {
-		CheckOutDate = checkOutDate;
+		this.checkOutDate = checkOutDate;
 	}
 
-	private String firstName;
-	
-	public Guest(int guestId, String firstName, String lastName, String email, Date dateOfBirth, int phone,
-			int secondaryPhone, String fatherName, int fatherPhone, String localGaurdianName, int localGaurdianPhone,
-			String bloodGroup, String addressLine1, String addressLine2, int pincode, String city, String state,
-			String country, Long aadharCard , Date checkinDate, String workAddressLine1,
-			String workAddressLine2, int workNumber, String buildingName, int floorNumber, int roomNumber, int bedId,
-			String paymentId, String transactionId, String due, String paymentPurpose, int roomRent,
-			int securityDeposit, String paymentMethod, Date transactionDate, Date noticeDate, Date checkOutDate) {
+	public Guest(int guestId, String firstName, String lastName, String email, String occupation, Date dateOfBirth,
+			int personalNumber, int secondaryPhoneNumber, String fatherName, int fatherNumber, String localGaurdianName,
+			int localGaurdianPhoneNumber, String bloodGroup, String gender, String addressLine1, String addressLine2,
+			int pincode, String city, String state, String country, Long aadharNumber, Date checkinDate,
+			String workAddressLine1, String workAddressLine2, int workNumber, String buildingName, int floorNumber,
+			int roomNumber, int bedId, String paymentId, String transactionId, String dueAmount, String paymentPurpose,
+			int roomRent, int securityDeposit, String paymentMethod, Date transactionDate, Date noticeDate,
+			Date checkOutDate) {
 		super();
 		this.guestId = guestId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+		this.occupation = occupation;
 		this.dateOfBirth = dateOfBirth;
-		this.phone = phone;
-		this.secondaryPhone = secondaryPhone;
+		this.personalNumber = personalNumber;
+		this.secondaryPhoneNumber = secondaryPhoneNumber;
 		this.fatherName = fatherName;
-		this.fatherPhone = fatherPhone;
+		this.fatherNumber = fatherNumber;
 		this.localGaurdianName = localGaurdianName;
-		this.localGaurdianPhone = localGaurdianPhone;
+		this.localGaurdianPhoneNumber = localGaurdianPhoneNumber;
 		this.bloodGroup = bloodGroup;
+		this.gender = gender;
 		this.addressLine1 = addressLine1;
 		this.addressLine2 = addressLine2;
-		Pincode = pincode;
+		this.pincode = pincode;
 		this.city = city;
-		State = state;
-		Country = country;
-		AadharCard = aadharCard;
-	
+		this.state = state;
+		this.country = country;
+		this.aadharNumber = aadharNumber;
 		this.checkinDate = checkinDate;
 		this.workAddressLine1 = workAddressLine1;
 		this.workAddressLine2 = workAddressLine2;
 		this.workNumber = workNumber;
-		BuildingName = buildingName;
-		FloorNumber = floorNumber;
-		RoomNumber = roomNumber;
-		BedId = bedId;
-		PaymentId = paymentId;
-		TransactionId = transactionId;
-		Due = due;
-		PaymentPurpose = paymentPurpose;
-		RoomRent = roomRent;
-		SecurityDeposit = securityDeposit;
-		PaymentMethod = paymentMethod;
-		TransactionDate = transactionDate;
-		NoticeDate = noticeDate;
-		CheckOutDate = checkOutDate;
-	}
-
-	private String lastName;
-	private String email;
-	private Date dateOfBirth;
-	private int phone;
-	private int secondaryPhone;
-	private String fatherName;
-	private int fatherPhone;
-	private String localGaurdianName;
-	private int localGaurdianPhone;
-	private String bloodGroup;
-   public byte[] getGuestProfilePicture() {
-		return GuestProfilePicture;
-	}
-
-	public void setGuestProfilePicture(byte [] guestProfilePicture) {
-		GuestProfilePicture = guestProfilePicture;
-	}
-
-private byte [] GuestProfilePicture;
-	public Guest(byte[] guestProfilePicture) {
-	super();
-	GuestProfilePicture = guestProfilePicture;
-}
-
-	private String addressLine1;
-	private String addressLine2;
-      private int  Pincode;
-	private String city;
-       private String State;
-       private String Country;
-       private Long   AadharCard;
-      
-    
-     private Date checkinDate;
-
-	
-	private String workAddressLine1;
-	private String workAddressLine2;
-      private int workNumber;
-       private String BuildingName;
-	private int FloorNumber;
-	private int RoomNumber;
-	private int  BedId;
-	private String PaymentId;
-	private String TransactionId;
-	private String Due;
-	private String PaymentPurpose;
-	private int RoomRent;
-	private int SecurityDeposit;
-     private String PaymentMethod;
-private Date TransactionDate;
-private Date NoticeDate;
-private Date CheckOutDate;
-
-
-	public int getGuestId() {
-		return guestId;
-	}
-
-	public void setGuestId(int guestId) {
-		this.guestId = guestId;
+		this.buildingName = buildingName;
+		this.floorNumber = floorNumber;
+		this.roomNumber = roomNumber;
+		this.bedId = bedId;
+		this.paymentId = paymentId;
+		this.transactionId = transactionId;
+		this.dueAmount = dueAmount;
+		this.paymentPurpose = paymentPurpose;
+		this.roomRent = roomRent;
+		this.securityDeposit = securityDeposit;
+		this.paymentMethod = paymentMethod;
+		this.transactionDate = transactionDate;
+		this.noticeDate = noticeDate;
+		this.checkOutDate = checkOutDate;
 	}
 
 	public Guest() {
 		super();
-		//TODO Auto-generated constructor stub
+		// TODO Auto-generated constructor stub
 	}
 
-	public Guest(int guestId) {
-		super();
-		this.guestId = guestId;
-	}
-	
-
-	
-	
 }
